@@ -9,13 +9,32 @@
 <body>
 
 <div class="container">
-  <div class="personagem">
-    <img src="img/personagem.png" alt="Boneco fofo">
-  </div>
 
+  <!-- Bonequinho em SVG -->
+  <svg width="200" height="200" viewBox="0 0 200 200">
+    <!-- Cabeça -->
+    <circle cx="100" cy="50" r="20" stroke="black" stroke-width="3" fill="none"/>
+    <!-- Corpo -->
+    <line x1="100" y1="70" x2="100" y2="130" stroke="black" stroke-width="3"/>
+    <!-- Braço esquerdo -->
+    <line x1="100" y1="80" x2="60" y2="100" stroke="black" stroke-width="3"/>
+    <!-- Braço direito apontando -->
+    <line x1="100" y1="80" x2="150" y2="60" stroke="black" stroke-width="3"/>
+    <!-- Perna esquerda -->
+    <line x1="100" y1="130" x2="70" y2="170" stroke="black" stroke-width="3"/>
+    <!-- Perna direita -->
+    <line x1="100" y1="130" x2="130" y2="170" stroke="black" stroke-width="3"/>
+    <!-- Rosto -->
+    <circle cx="93" cy="45" r="2" fill="black"/>
+    <circle cx="107" cy="45" r="2" fill="black"/>
+    <path d="M95 55 Q100 60 105 55" stroke="black" fill="none" stroke-width="2"/>
+  </svg>
+
+  <!-- Coração sendo formado -->
   <div class="love">
     <div class="block"></div>
   </div>
+
 </div>
 
 <script src="script.js"></script>
