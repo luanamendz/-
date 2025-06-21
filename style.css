@@ -18,10 +18,10 @@ body {
 .boneco-cacheado {
   position: absolute;
   left: 50px;
-  bottom: 150px;
+  bottom: 200px;
 }
 
-/* Nome Gabriela lado direito */
+/* Nome Gabriela */
 .nome-gabriela {
   position: absolute;
   right: 50px;
@@ -30,7 +30,7 @@ body {
   height: 400px;
 }
 
-/* Pedido cena */
+/* Pedido */
 .pedido {
   position: absolute;
   bottom: 50px;
@@ -41,6 +41,7 @@ body {
   align-items: center;
 }
 
+/* Caixa de texto */
 .caixa-texto {
   background: white;
   color: black;
@@ -57,4 +58,38 @@ body {
 .caixa-texto.aparecer {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Coração */
+.nome-gabriela heart {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  background: red;
+  clip-path: polygon(
+    50% 0%, 
+    61% 10%, 
+    70% 20%, 
+    77% 30%, 
+    84% 40%, 
+    89% 50%, 
+    91% 60%, 
+    92% 70%, 
+    90% 80%, 
+    85% 90%, 
+    75% 100%, 
+    50% 90%, 
+    25% 100%, 
+    15% 90%, 
+    10% 80%, 
+    8% 70%, 
+    9% 60%, 
+    11% 50%, 
+    16% 40%, 
+    23% 30%, 
+    30% 20%, 
+    39% 10%
+  );
+  transform: scale(1);
+  opacity: 0;
 }
