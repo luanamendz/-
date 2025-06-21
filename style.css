@@ -13,20 +13,11 @@ body {
 }
 
 .container {
-  position: relative;
-  width: 500px;
-  height: 500px;
-  background: #fff;
-  border-radius: 30px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  text-align: center;
 }
 
-.personagem img {
-  width: 150px;
+svg {
+  margin-bottom: 20px;
 }
 
 .love {
@@ -42,9 +33,34 @@ body {
 }
 
 .love .block heart {
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
   position: absolute;
-  background: url('img/heart.png') no-repeat center;
-  background-size: contain;
+  background: red;
+  clip-path: polygon(
+    50% 0%, 
+    61% 10%, 
+    70% 20%, 
+    77% 30%, 
+    84% 40%, 
+    89% 50%, 
+    91% 60%, 
+    92% 70%, 
+    90% 80%, 
+    85% 90%, 
+    75% 100%, 
+    50% 90%, 
+    25% 100%, 
+    15% 90%, 
+    10% 80%, 
+    8% 70%, 
+    9% 60%, 
+    11% 50%, 
+    16% 40%, 
+    23% 30%, 
+    30% 20%, 
+    39% 10%
+  );
+  transform: scale(1);
+  opacity: 0;
 }
