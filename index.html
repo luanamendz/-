@@ -3,38 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Boneco Animado</title>
+  <title>Amorzinho Dev</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="container">
-  <svg id="boneco" width="300" height="300" viewBox="0 0 200 200">
-    <!-- Cabeça -->
-    <circle cx="100" cy="40" r="20" class="desenho"/>
-    <!-- Corpo -->
-    <line x1="100" y1="60" x2="100" y2="130" class="desenho"/>
-    <!-- Braço esquerdo -->
-    <line x1="100" y1="70" x2="60" y2="100" class="desenho"/>
-    <!-- Braço direito apontando -->
-    <line x1="100" y1="70" x2="150" y2="50" class="desenho"/>
-    <!-- Perna esquerda -->
-    <line x1="100" y1="130" x2="70" y2="170" class="desenho"/>
-    <!-- Perna direita -->
-    <line x1="100" y1="130" x2="130" y2="170" class="desenho"/>
-  </svg>
+  <div class="personagem">
+    <img src="img/personagem.png" alt="Boneco fofo">
+  </div>
 
-  <button id="botao" class="oculto">Clique aqui 🌳</button>
+  <div class="love">
+    <div class="block"></div>
+  </div>
 </div>
 
-<script>
-  window.addEventListener('load', () => {
-    setTimeout(() => {
-      document.getElementById('botao').classList.remove('oculto');
-      document.getElementById('botao').classList.add('mostrar');
-    }, 2500); // tempo até o botão aparecer (ajustável)
-  });
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
