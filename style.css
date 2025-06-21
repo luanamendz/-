@@ -1,66 +1,60 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  background: white;
+  margin: 0;
+  background: #e75480; /* rosa avermelhado */
+  overflow: hidden;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.cenario {
+  position: relative;
+  width: 100vw;
   height: 100vh;
 }
 
-.container {
-  text-align: center;
-}
-
-svg {
-  margin-bottom: 20px;
-}
-
-.love {
-  position: relative;
-  width: 300px;
-  height: 300px;
-}
-
-.love .block {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.love .block heart {
-  width: 20px;
-  height: 20px;
+/* Boneco da esquerda */
+.boneco-cacheado {
   position: absolute;
-  background: red;
-  clip-path: polygon(
-    50% 0%, 
-    61% 10%, 
-    70% 20%, 
-    77% 30%, 
-    84% 40%, 
-    89% 50%, 
-    91% 60%, 
-    92% 70%, 
-    90% 80%, 
-    85% 90%, 
-    75% 100%, 
-    50% 90%, 
-    25% 100%, 
-    15% 90%, 
-    10% 80%, 
-    8% 70%, 
-    9% 60%, 
-    11% 50%, 
-    16% 40%, 
-    23% 30%, 
-    30% 20%, 
-    39% 10%
-  );
-  transform: scale(1);
+  left: 50px;
+  bottom: 150px;
+}
+
+/* Nome Gabriela lado direito */
+.nome-gabriela {
+  position: absolute;
+  right: 50px;
+  top: 100px;
+  width: 400px;
+  height: 400px;
+}
+
+/* Pedido cena */
+.pedido {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.caixa-texto {
+  background: white;
+  color: black;
+  padding: 15px 25px;
+  border-radius: 15px;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  margin-top: 20px;
   opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.caixa-texto.aparecer {
+  opacity: 1;
+  transform: translateY(0);
 }
