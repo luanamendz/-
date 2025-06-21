@@ -1,0 +1,39 @@
+body {
+  background-color: #111;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 800px;
+}
+
+button {
+  background-color: #2ecc71;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: white;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #27ae60;
+}
+
+.oculto {
+  display: none;
+}
+
+video {
+  width: 100%;
+  border-radius: 20px;
+  margin-top: 20px;
+}
