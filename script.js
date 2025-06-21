@@ -12,11 +12,14 @@ heartPositions.forEach((pos, index) => {
   const heart = document.createElement('heart');
   heart.style.left = `${pos[1] * 30}px`;
   heart.style.top = `${pos[0] * 30}px`;
-  heart.style.opacity = 0;
   block.appendChild(heart);
 
   setTimeout(() => {
-    heart.style.transition = 'opacity 0.5s ease';
+    heart.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
     heart.style.opacity = 1;
+    heart.style.transform = 'scale(1.2)';
+    setTimeout(() => {
+      heart.style.transform = 'scale(1)';
+    }, 300);
   }, index * 150);
 });
